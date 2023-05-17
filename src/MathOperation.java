@@ -12,24 +12,24 @@ public class MathOperation <T extends Number> {
         this.num1 = num1;
         this.num2 = num2;
     }
-    public double sum (T num1, T num2)
-    {
-        return (double) ((Integer)num1 + (Integer) num2);
+
+    public double sum (T num1 , T num2) {
+        return num1.doubleValue() + num2.doubleValue();
     }
 
     public double substraction (T num1, T num2)
     {
-        return (double)num1 - (double)num2;
+        return num1.doubleValue() + num2.doubleValue();
     }
 
     public double multi (T num1 , T num2)
     {
-        return (double)num1 * (double)num2;
+        return num1.doubleValue() * num2.doubleValue();
     }
 
     public double div (T num1, T num2)
     {
-        return (double) num1 / (double)num2;
+        return num1.doubleValue() / num2.doubleValue();
     }
 
 }

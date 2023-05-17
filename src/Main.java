@@ -6,6 +6,7 @@ public class Main {
 
 
         /**1**/
+        System.out.println("\n/**1**/\n");
         Storage<Object> storage = new Storage<>();
         storage.addElement(12);
         storage.addElement("Yellow");
@@ -13,6 +14,7 @@ public class Main {
 
 
         /**2**/
+        System.out.println("\n/**2**/\n");
         Pila<Object> pila = new Pila<>();
         System.out.println(pila.empty());
         pila.addElement(12);
@@ -23,6 +25,7 @@ public class Main {
         System.out.println(pila.searchElement("Mariano Closs"));
 
         /**3**/
+        System.out.println("\n/**3**/\n");
         int num1 = 1;
         float num2 = 23.32F;
         MathOperation<Number> mo = new MathOperation<>();
@@ -32,5 +35,18 @@ public class Main {
         System.out.println(mo.multi(num1,num2));
         System.out.println(mo.div(num1,num2));
 
+
+        /**4**/
+        System.out.println("\n/**4**/\n");
+        Set set = new Set();
+        set.addElement(1);
+        set.addElement(pila);
+        set.addElement("Cada dia mas");
+        set.removeElement("Cada dia mas");
+        System.out.println(set.seachElement("Cada dia mas"));
+        System.out.println(set.seachElement(pila));
+
+        /**5**/
+        System.out.println("\n/**5**/\n");
     }
 }
